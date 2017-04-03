@@ -15,15 +15,17 @@ for(var i = 0; i < keys.length; i++) {
 			decimalAdded = false;
 		}
 		
-		// If eval key is pressed, calculate and display the result
+		// If eval key is pressed, calculate and display result
 		else if(btnVal == '=') {
 			var equation = inputVal;
 			var lastChar = equation[equation.length - 1];
 			
-			// Replace all instances of x and ÷ with * and / respectively. This can be done easily using regex and the 'g' tag which will replace all instances of the matched character/substring
+			/* Replace all instances of x and ÷ with * and / respectively. This can be done easily using regex and 
+			the 'g' tag which will replace all instances of the matched character/substring */
 			equation = equation.replace(/x/g, '*').replace(/÷/g, '/');
 			
-			// Final thing left to do is checking the last character of the equation. If it's an operator or a decimal, remove it
+			/* Final thing left to do is checking the last character of the equation. 
+			If it's an operator or a decimal, remove it*/
 			if(operators.indexOf(lastChar) > -1 || lastChar == '.')
 				equation = equation.replace(/.$/, '');
 			
@@ -48,7 +50,9 @@ for(var i = 0; i < keys.length; i++) {
 			
 			// Replace the last operator (if exists) with the newly pressed operator
 			if(operators.indexOf(lastChar) > -1 && inputVal.length > 1) {
-				// Here, '.' matches any character while $ denotes the end of string, so anything (will be an operator in this case) at the end of string will get replaced by new operator
+				/* Here, '.' matches any character while $ denotes the end of string, 
+				so anything (will be an operator in this case) at the end of string 
+				will get replaced by new operator*/
 				input.innerHTML = inputVal.replace(/.$/, btnVal);
 			}
 			
