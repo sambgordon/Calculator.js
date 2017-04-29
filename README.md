@@ -9,3 +9,4 @@ The regex ```
 equation ``` is used to replace the ```x``` and ```÷``` with a more conventional ```*``` and ```/```.
 
 [View live Demo](https://cdn.rawgit.com/sambgordon/Javascript-Calculator/master/index.html)
+___
