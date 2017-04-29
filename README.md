@@ -3,4 +3,6 @@ This is a calculator designed in Javascript, as a fork from [thecodeplayer.com](
 
 It supports floating-point numbers and multiple in tandem operations. 
 
+Note: the regex 'equation = equation.replace(/x/g, '*').replace(/÷/g, '/');' is used
+
 [View live Demo](https://cdn.rawgit.com/sambgordon/Javascript-Calculator/master/index.html)
