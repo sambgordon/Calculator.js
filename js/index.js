@@ -10,12 +10,10 @@ for(var i = 0; i < keys.length; i++) {
 		var input = document.querySelector('.screen');
 		var inputVal = input.innerHTML;
 		var btnVal = this.innerHTML;
-
 		if(btnVal == 'C') {
 			input.innerHTML = '';
 			decimalAdded = false;
 		}
-		
 		// If eval key is pressed, calculate and display result
 		else if(btnVal == '=') {
 			var equation = inputVal;
@@ -31,11 +29,9 @@ for(var i = 0; i < keys.length; i++) {
 				equation = equation.replace(/.$/, '');
 			
 			if(equation)
-				input.innerHTML = eval(equation);
-				
+				input.innerHTML = eval(equation);		
 			decimalAdded = false;
 		}
-		
 		else if(operators.indexOf(btnVal) > -1) {
 			// Operator is clicked
 			// Get the last character from the equation
@@ -59,7 +55,6 @@ for(var i = 0; i < keys.length; i++) {
 			
 			decimalAdded =false;
 		}
-		
 	
 		else if(btnVal == '.') {
 			if(!decimalAdded) {
@@ -67,12 +62,10 @@ for(var i = 0; i < keys.length; i++) {
 				decimalAdded = true;
 			}
 		}
-		
 		// if any other key is pressed, just append it
 		else {
 			input.innerHTML += btnVal;
 		}
-	
 		e.preventDefault();
 	} 
 }
