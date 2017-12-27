@@ -1,3 +1,13 @@
+/**
+* Application Name: Calculator.js
+* Application URI: https://github.com/sambgordon/Calculator.js
+* Description: Calculator designed in Javascript
+* Version: 1.0.0
+* Author: Sam Gordon
+* Author URI: http://www.devbysam.com 
+* License: MIT
+********
+
 var keys = document.querySelectorAll('#calculator span');
 //standard calculator operators we'll be using!
 var operators = ['+', '-', 'x', '÷'];
