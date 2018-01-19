@@ -1,6 +1,6 @@
 ___
 # Javascript-Calculator
-This is a calculator designed in Javascript, as a fork from [thecodeplayer.com](http://thecodeplayer.com/walkthrough/javascript-css3-calculator). 
+This is a calculator designed in Javascript, built for [thecodeplayer.com](http://thecodeplayer.com/walkthrough/javascript-css3-calculator). 
 
 ### Overview
 Supports floating-point numbers and multiple in tandem operations. 
